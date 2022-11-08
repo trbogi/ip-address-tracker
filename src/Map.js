@@ -16,11 +16,7 @@ function Map({latitude, longitude}) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <ChangeView center={center} zoom={zoom} />
-            <Marker position={[latitude, longitude]}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker>
+            <Marker position={[latitude, longitude]}/>
         </MapContainer>)
 
 }export default Map
